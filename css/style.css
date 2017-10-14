@@ -1,0 +1,1062 @@
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/GothamProMedium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/GothamProBold.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gotham - Book";
+  src: url(../fonts/Gotham-Book.otf);
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: url(../fonts/fontawesome-regular.woff);
+  font-weight: 400;
+}
+body a {
+  text-decoration: none;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  max-width: 1400px;
+  min-width: 1000px;
+  margin: 15px auto 0 auto;
+}
+.head > a:first-child {
+  margin-right: 10px;
+}
+.head ul {
+  line-height: 45px;
+}
+.head ul li {
+  margin-right: 21px;
+  display: inline-block;
+}
+.head ul li a {
+  font-family: Gotham;
+  font-size: 14px;
+  line-height: 45px;
+  color: #96a6a7;
+  text-transform: uppercase;
+}
+.head .figure {
+  display: inline-flex;
+}
+.head .figure .sq {
+  width: 74px;
+  min-height: 74px;
+  max-height: 105px;
+  background-color: #e2dee0;
+  margin-top: -15px;
+  position: relative;
+}
+.head .figure .sq::before {
+  font-family: "Font Awesome";
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  content: '';
+  position: absolute;
+  left: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 21px;
+  margin: auto;
+}
+.head .figure .poly {
+  display: inline-block;
+  width: 230px;
+  min-height: 74px;
+  max-height: 105px;
+  background-color: #e94e38;
+  margin-top: -15px;
+  position: relative;
+}
+.head .figure .poly::before {
+  font-family: "Font Awesome";
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 21px;
+  margin: auto;
+}
+.head .figure .poly a {
+  font-family: Gotham;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 60px;
+  height: 21px;
+  margin: auto;
+}
+.search-bg {
+  background-image: url(../img/bg.jpg);
+  height: 375px;
+  min-width: 1000px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.search-bg .search {
+  text-align: center;
+}
+.search-bg .search h2 {
+  font-family: Gotham;
+  font-size: 30px;
+  line-height: 29px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+  font-weight: 500;
+  padding-top: 56px;
+  margin-bottom: 30px;
+}
+.search-bg .search .input-in {
+  display: inline-block;
+  position: relative;
+}
+.search-bg .search .input-in::after {
+  font-family: "Font Awesome";
+  font-size: 14px;
+  line-height: 48px;
+  color: #ffffff;
+  content: "";
+  position: absolute;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  top: 2px;
+  left: 182px;
+}
+.search-bg .search div:nth-child(2) {
+  margin-right: 20px;
+}
+.search-bg .search input {
+  width: 223px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 38px;
+  margin-bottom: 21px;
+  padding-left: 31px;
+  box-sizing: border-box;
+  outline: none;
+  color: #ffffff;
+  font-family: "Gotham - Book";
+  font-size: 18px;
+  line-height: 18px;
+}
+.search-bg .search input:nth-child(4) {
+  width: 473px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+}
+.search-bg .search input::-webkit-input-placeholder {
+  color: white;
+  font-family: "Gotham - Book";
+  font-size: 18px;
+  line-height: 18px;
+}
+.search-bg .search a {
+  width: 140px;
+  height: 63px;
+  box-shadow: 0 2px 0 #c1412e;
+  background-color: #e94e38;
+  display: block;
+  border-radius: 40px;
+  margin: 0 auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  font-family: Gotham;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.map {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.map .recomented a {
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 38px;
+  color: #96a6a7;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 25px;
+}
+.map .recomented a:hover {
+  color: #e94e38;
+}
+.map .recomented a:last-child {
+  margin-right: 0;
+}
+.map .city .dubai {
+  display: inline-block;
+  position: relative;
+  width: 117px;
+  height: 36px;
+  border: 1px solid #96a6a7;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.map .city .dubai a:first-child {
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 38px;
+  color: #e94e38;
+  padding-left: 20px;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.map .city .dubai a:last-child {
+  font-family: "Font Awesome";
+  font-size: 12px;
+  line-height: 12px;
+  color: #96a6a7;
+  position: absolute;
+  font-weight: 400;
+  text-transform: uppercase;
+  top: 13px;
+  left: 90px;
+}
+.map .city .hide {
+  display: inline-block;
+}
+.map .city .hide a {
+  position: relative;
+  width: 128px;
+  height: 38px;
+  border: 1px solid #1baf5d;
+  background-color: #1baf5d;
+  display: inline-block;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.map .city .hide a:after {
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 14px;
+  right: 20px;
+}
+.map .filter {
+  text-align: 0;
+}
+.map .filter p {
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-right: 10px;
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 43px;
+  color: #96a6a7;
+}
+.map .filter a {
+  width: 40px;
+  height: 41px;
+  background-color: #1baf5d;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  background-image: url(../img/home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.map .filter a:nth-child(3) {
+  background-color: #b6c0c1;
+  background-image: url(../img/human.png);
+}
+.map .filter a:nth-child(4) {
+  background-color: #b6c0c1;
+  background-image: url(../img/study.png);
+}
+.map .filter a:nth-child(5) {
+  background-color: #f19e1f;
+  background-image: url(../img/music.png);
+}
+.map .filter a:nth-child(6) {
+  background-color: #88499c;
+  background-image: url(../img/car.png);
+  margin-right: 0;
+}
+.bg-body {
+  background-color: #f3f1f2;
+  min-width: 1000px;
+}
+.bg-body .four-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 44px;
+}
+.bg-body .four-block .bl-1,
+.bg-body .four-block .bl-2,
+.bg-body .four-block .bl-3,
+.bg-body .four-block .bl-4,
+.bg-body .four-block .bl-5,
+.bg-body .four-block .bl-6 {
+  width: 210px;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2dee0;
+  margin-top: 30px;
+}
+.bg-body .four-block .bl-1 .image,
+.bg-body .four-block .bl-2 .image,
+.bg-body .four-block .bl-3 .image,
+.bg-body .four-block .bl-4 .image,
+.bg-body .four-block .bl-5 .image,
+.bg-body .four-block .bl-6 .image {
+  position: relative;
+}
+.bg-body .four-block .bl-1 .image:after,
+.bg-body .four-block .bl-2 .image:after,
+.bg-body .four-block .bl-3 .image:after,
+.bg-body .four-block .bl-4 .image:after,
+.bg-body .four-block .bl-5 .image:after,
+.bg-body .four-block .bl-6 .image:after {
+  content: "";
+  position: absolute;
+  top: 108px;
+  left: 70px;
+  width: 61px;
+  height: 61px;
+  border: 3px solid #ffffff;
+  background-color: #1baf5d;
+  border-radius: 50%;
+  background-image: url(../img/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 23px;
+}
+.bg-body .four-block .bl-1 .image .help,
+.bg-body .four-block .bl-2 .image .help,
+.bg-body .four-block .bl-3 .image .help,
+.bg-body .four-block .bl-4 .image .help,
+.bg-body .four-block .bl-5 .image .help,
+.bg-body .four-block .bl-6 .image .help {
+  position: absolute;
+  width: 210px;
+  height: 140px;
+  background-color: rgba(27, 175, 93, 0.7);
+  display: none;
+  top: 0;
+  left: 0;
+}
+.bg-body .four-block .bl-1 .image .help span,
+.bg-body .four-block .bl-2 .image .help span,
+.bg-body .four-block .bl-3 .image .help span,
+.bg-body .four-block .bl-4 .image .help span,
+.bg-body .four-block .bl-5 .image .help span,
+.bg-body .four-block .bl-6 .image .help span {
+  position: absolute;
+  font-family: "Font Awesome";
+  color: #ffffff;
+}
+.bg-body .four-block .bl-1 .image .help span:first-child,
+.bg-body .four-block .bl-2 .image .help span:first-child,
+.bg-body .four-block .bl-3 .image .help span:first-child,
+.bg-body .four-block .bl-4 .image .help span:first-child,
+.bg-body .four-block .bl-5 .image .help span:first-child,
+.bg-body .four-block .bl-6 .image .help span:first-child {
+  top: 23px;
+  left: 34px;
+  width: 141px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  background-color: rgba(27, 175, 93, 0.8);
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.bg-body .four-block .bl-1 .image .help span:first-child::before,
+.bg-body .four-block .bl-2 .image .help span:first-child::before,
+.bg-body .four-block .bl-3 .image .help span:first-child::before,
+.bg-body .four-block .bl-4 .image .help span:first-child::before,
+.bg-body .four-block .bl-5 .image .help span:first-child::before,
+.bg-body .four-block .bl-6 .image .help span:first-child::before {
+  content: "";
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 12px;
+  font-weight: 400;
+  padding-right: 8px;
+}
+.bg-body .four-block .bl-1 .image .help span:nth-child(2),
+.bg-body .four-block .bl-2 .image .help span:nth-child(2),
+.bg-body .four-block .bl-3 .image .help span:nth-child(2),
+.bg-body .four-block .bl-4 .image .help span:nth-child(2),
+.bg-body .four-block .bl-5 .image .help span:nth-child(2),
+.bg-body .four-block .bl-6 .image .help span:nth-child(2) {
+  top: 78px;
+  left: 36px;
+  font-size: 18px;
+}
+.bg-body .four-block .bl-1 .image .help span:last-child,
+.bg-body .four-block .bl-2 .image .help span:last-child,
+.bg-body .four-block .bl-3 .image .help span:last-child,
+.bg-body .four-block .bl-4 .image .help span:last-child,
+.bg-body .four-block .bl-5 .image .help span:last-child,
+.bg-body .four-block .bl-6 .image .help span:last-child {
+  top: 78px;
+  right: 38px;
+  font-size: 24px;
+}
+.bg-body .four-block .bl-1 .image:hover .help,
+.bg-body .four-block .bl-2 .image:hover .help,
+.bg-body .four-block .bl-3 .image:hover .help,
+.bg-body .four-block .bl-4 .image:hover .help,
+.bg-body .four-block .bl-5 .image:hover .help,
+.bg-body .four-block .bl-6 .image:hover .help {
+  display: block;
+}
+.bg-body .four-block .bl-1 img,
+.bg-body .four-block .bl-2 img,
+.bg-body .four-block .bl-3 img,
+.bg-body .four-block .bl-4 img,
+.bg-body .four-block .bl-5 img,
+.bg-body .four-block .bl-6 img {
+  border-bottom: 3px solid #1baf5d;
+}
+.bg-body .four-block .bl-1 p:nth-child(2),
+.bg-body .four-block .bl-2 p:nth-child(2),
+.bg-body .four-block .bl-3 p:nth-child(2),
+.bg-body .four-block .bl-4 p:nth-child(2),
+.bg-body .four-block .bl-5 p:nth-child(2),
+.bg-body .four-block .bl-6 p:nth-child(2) {
+  font-family: Gotham;
+  font-size: 14px;
+  line-height: 18px;
+  color: #566375;
+  font-weight: 500;
+  padding-top: 33px;
+  padding-bottom: 19px;
+}
+.bg-body .four-block .bl-1 p:nth-child(3),
+.bg-body .four-block .bl-2 p:nth-child(3),
+.bg-body .four-block .bl-3 p:nth-child(3),
+.bg-body .four-block .bl-4 p:nth-child(3),
+.bg-body .four-block .bl-5 p:nth-child(3),
+.bg-body .four-block .bl-6 p:nth-child(3) {
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1baf5d;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.bg-body .four-block .bl-1 .rating,
+.bg-body .four-block .bl-2 .rating,
+.bg-body .four-block .bl-3 .rating,
+.bg-body .four-block .bl-4 .rating,
+.bg-body .four-block .bl-5 .rating,
+.bg-body .four-block .bl-6 .rating {
+  border: none;
+  width: fit-content;
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 6px;
+}
+.bg-body .four-block .bl-1 .rating > input,
+.bg-body .four-block .bl-2 .rating > input,
+.bg-body .four-block .bl-3 .rating > input,
+.bg-body .four-block .bl-4 .rating > input,
+.bg-body .four-block .bl-5 .rating > input,
+.bg-body .four-block .bl-6 .rating > input {
+  display: none;
+}
+.bg-body .four-block .bl-1 .rating > label:before,
+.bg-body .four-block .bl-2 .rating > label:before,
+.bg-body .four-block .bl-3 .rating > label:before,
+.bg-body .four-block .bl-4 .rating > label:before,
+.bg-body .four-block .bl-5 .rating > label:before,
+.bg-body .four-block .bl-6 .rating > label:before {
+  margin: 0;
+  font-size: 0.95em;
+  font-family: "Font Awesome";
+  display: inline-block;
+  content: "\f005";
+}
+.bg-body .four-block .bl-1 .rating > label,
+.bg-body .four-block .bl-2 .rating > label,
+.bg-body .four-block .bl-3 .rating > label,
+.bg-body .four-block .bl-4 .rating > label,
+.bg-body .four-block .bl-5 .rating > label,
+.bg-body .four-block .bl-6 .rating > label {
+  color: #ddd;
+  float: right;
+}
+.bg-body .four-block .bl-1 .rating > input:checked ~ label,
+.bg-body .four-block .bl-2 .rating > input:checked ~ label,
+.bg-body .four-block .bl-3 .rating > input:checked ~ label,
+.bg-body .four-block .bl-4 .rating > input:checked ~ label,
+.bg-body .four-block .bl-5 .rating > input:checked ~ label,
+.bg-body .four-block .bl-6 .rating > input:checked ~ label,
+.bg-body .four-block .bl-1 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-2 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-3 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-4 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-5 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-6 .rating:not(:checked) > label:hover,
+.bg-body .four-block .bl-1 .rating:not(:checked) > label:hover ~ label,
+.bg-body .four-block .bl-2 .rating:not(:checked) > label:hover ~ label,
+.bg-body .four-block .bl-3 .rating:not(:checked) > label:hover ~ label,
+.bg-body .four-block .bl-4 .rating:not(:checked) > label:hover ~ label,
+.bg-body .four-block .bl-5 .rating:not(:checked) > label:hover ~ label,
+.bg-body .four-block .bl-6 .rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+.bg-body .four-block .bl-1 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-2 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-3 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-4 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-5 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-6 .rating > input:checked + label:hover,
+.bg-body .four-block .bl-1 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-2 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-3 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-4 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-5 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-6 .rating > input:checked ~ label:hover,
+.bg-body .four-block .bl-1 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-2 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-3 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-4 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-5 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-6 .rating > label:hover ~ input:checked ~ label,
+.bg-body .four-block .bl-1 .rating > input:checked ~ label:hover ~ label,
+.bg-body .four-block .bl-2 .rating > input:checked ~ label:hover ~ label,
+.bg-body .four-block .bl-3 .rating > input:checked ~ label:hover ~ label,
+.bg-body .four-block .bl-4 .rating > input:checked ~ label:hover ~ label,
+.bg-body .four-block .bl-5 .rating > input:checked ~ label:hover ~ label,
+.bg-body .four-block .bl-6 .rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+.bg-body .four-block .bl-1 span,
+.bg-body .four-block .bl-2 span,
+.bg-body .four-block .bl-3 span,
+.bg-body .four-block .bl-4 span,
+.bg-body .four-block .bl-5 span,
+.bg-body .four-block .bl-6 span {
+  display: inline-block;
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 14px;
+  color: #96a6a7;
+  font-weight: 500;
+  text-transform: uppercase;
+  vertical-align: text-top;
+}
+.bg-body .four-block .bl-1 .image::before,
+.bg-body .four-block .bl-4 .image::before {
+  content: "$2,990";
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 65px;
+  height: 25px;
+  background-color: #1baf5d;
+  border-radius: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.bg-body .four-block .bl-2 .image {
+  position: relative;
+}
+.bg-body .four-block .bl-2 .image:after {
+  background-color: #f19e1f;
+  background-image: url(../img/music.png);
+  background-size: 26px 26px;
+}
+.bg-body .four-block .bl-2 .image .help {
+  background-color: rgba(240, 148, 7, 0.7);
+}
+.bg-body .four-block .bl-2 .image .help span:first-child {
+  background-color: rgba(240, 148, 7, 0.8);
+}
+.bg-body .four-block .bl-2 img {
+  border-bottom: 3px solid #f19e1f;
+}
+.bg-body .four-block .bl-2 p:nth-child(2) {
+  min-height: 34px;
+}
+.bg-body .four-block .bl-2 p:nth-child(3) {
+  color: #f19e1f;
+}
+.bg-body .four-block .bl-3 .image {
+  position: relative;
+}
+.bg-body .four-block .bl-3 .image:after {
+  background-color: #88499c;
+  background-image: url(../img/car.png);
+  background-size: 26px 26px;
+}
+.bg-body .four-block .bl-3 .image .help {
+  background-color: rgba(136, 73, 156, 0.7);
+}
+.bg-body .four-block .bl-3 .image .help span:first-child {
+  background-color: rgba(136, 73, 156, 0.8);
+}
+.bg-body .four-block .bl-3 img {
+  border-bottom: 3px solid #88499c;
+}
+.bg-body .four-block .bl-3 p:nth-child(3) {
+  color: #88499c;
+}
+.bg-body .four-block .bl-5,
+.bg-body .four-block .bl-6 {
+  width: 455px;
+  margin-top: 30px;
+  background-color: white;
+}
+.bg-body .four-block .bl-5 .image,
+.bg-body .four-block .bl-6 .image {
+  position: relative;
+}
+.bg-body .four-block .bl-5 .image img,
+.bg-body .four-block .bl-6 .image img {
+  margin-bottom: 16px;
+}
+.bg-body .four-block .bl-5 .image:after,
+.bg-body .four-block .bl-6 .image:after {
+  top: 92px;
+  left: 19px;
+}
+.bg-body .four-block .bl-5 .image .help,
+.bg-body .four-block .bl-6 .image .help {
+  position: absolute;
+  width: 455px;
+  height: 51px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  top: 69px;
+  left: 0;
+}
+.bg-body .four-block .bl-5 .image .help h3,
+.bg-body .four-block .bl-6 .image .help h3 {
+  font-family: Gotham;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 27px;
+  left: 97px;
+}
+.bg-body .four-block .bl-5 .image .help span:nth-child(2),
+.bg-body .four-block .bl-6 .image .help span:nth-child(2) {
+  font-family: "Font Awesome";
+  font-size: 12px;
+  line-height: 14px;
+  color: #f19e1f;
+  font-weight: 400;
+  top: 27px;
+  left: 256px;
+  text-transform: uppercase;
+}
+.bg-body .four-block .bl-5 .image .help span:last-child,
+.bg-body .four-block .bl-6 .image .help span:last-child {
+  font-family: Gotham;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 27px;
+  left: 270px;
+}
+.bg-body .four-block .bl-5 .image .rating,
+.bg-body .four-block .bl-6 .image .rating {
+  display: block;
+  margin-left: 104px;
+}
+.bg-body .four-block .bl-5 .image .lucy,
+.bg-body .four-block .bl-6 .image .lucy,
+.bg-body .four-block .bl-5 .image .peter,
+.bg-body .four-block .bl-6 .image .peter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  text-align: left;
+}
+.bg-body .four-block .bl-5 .image .lucy .logo-client,
+.bg-body .four-block .bl-6 .image .lucy .logo-client,
+.bg-body .four-block .bl-5 .image .peter .logo-client,
+.bg-body .four-block .bl-6 .image .peter .logo-client {
+  width: 23%;
+  text-align: center;
+}
+.bg-body .four-block .bl-5 .image .lucy .logo-client img,
+.bg-body .four-block .bl-6 .image .lucy .logo-client img,
+.bg-body .four-block .bl-5 .image .peter .logo-client img,
+.bg-body .four-block .bl-6 .image .peter .logo-client img {
+  border-bottom: none;
+}
+.bg-body .four-block .bl-5 .image .lucy .quote,
+.bg-body .four-block .bl-6 .image .lucy .quote,
+.bg-body .four-block .bl-5 .image .peter .quote,
+.bg-body .four-block .bl-6 .image .peter .quote {
+  width: 77%;
+}
+.bg-body .four-block .bl-5 .image .lucy .quote h5,
+.bg-body .four-block .bl-6 .image .lucy .quote h5,
+.bg-body .four-block .bl-5 .image .peter .quote h5,
+.bg-body .four-block .bl-6 .image .peter .quote h5 {
+  font-family: Gotham;
+  font-size: 16px;
+  line-height: 18px;
+  color: #566375;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.bg-body .four-block .bl-5 .image .lucy .quote span,
+.bg-body .four-block .bl-6 .image .lucy .quote span,
+.bg-body .four-block .bl-5 .image .peter .quote span,
+.bg-body .four-block .bl-6 .image .peter .quote span,
+.bg-body .four-block .bl-5 .image .lucy .quote a,
+.bg-body .four-block .bl-6 .image .lucy .quote a,
+.bg-body .four-block .bl-5 .image .peter .quote a,
+.bg-body .four-block .bl-6 .image .peter .quote a {
+  color: #566375;
+  font-family: "Gotham - Book", Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  font-weight: 300;
+  text-transform: none;
+}
+.bg-body .four-block .bl-5 .image .lucy .quote a,
+.bg-body .four-block .bl-6 .image .lucy .quote a,
+.bg-body .four-block .bl-5 .image .peter .quote a,
+.bg-body .four-block .bl-6 .image .peter .quote a {
+  font-family: Gotham;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.bg-body .four-block .bl-6 .image:after {
+  background-color: #f19e1f;
+}
+.bg-body .load-more {
+  text-align: center;
+  margin-top: 39px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #e2dee0;
+}
+.bg-body .load-more a {
+  font-family: Gotham;
+  font-size: 18px;
+  line-height: 48px;
+  color: #566375;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.bg-body .load-more a span {
+  font-family: "Font Awesome";
+  font-size: 14px;
+  font-weight: 400;
+}
+.bg-body .duhoot {
+  margin-top: 88px;
+  text-align: center;
+}
+.bg-body .duhoot h3 {
+  font-family: Gotham;
+  font-size: 22px;
+  line-height: 22px;
+  color: #566375;
+  font-weight: 500;
+}
+.bg-body .duhoot p {
+  font-family: "Gotham - Book";
+  font-size: 16px;
+  line-height: 18px;
+  color: #96a6a7;
+  font-weight: 400;
+  margin-top: 9px;
+}
+.bg-body .circle {
+  text-align: center;
+  margin-top: 69px;
+}
+.bg-body .circle a {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  border: 2px solid #1baf5d;
+  display: inline-block;
+  margin-left: 60px;
+  background-image: url(../img/home-md.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-body .circle a:nth-child(2) {
+  background-image: url(../img/human-md.png);
+  border: 2px solid #9dacad;
+}
+.bg-body .circle a:nth-child(3) {
+  background-image: url(../img/study-md.png);
+  border: 2px solid #9dacad;
+}
+.bg-body .circle a:nth-child(4) {
+  background-image: url(../img/music-md.png);
+  border: 2px solid #9dacad;
+}
+.bg-body .circle a:nth-child(5) {
+  background-image: url(../img/car-md.png);
+  border: 2px solid #9dacad;
+}
+.bg-body .circle a::after {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 2px;
+  background-color: #e2dee0;
+  top: 52px;
+  left: 110px;
+}
+.bg-body .circle a:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #e2dee0;
+  top: 0;
+  left: 110px;
+}
+.bg-body .circle a:first-child {
+  margin-left: 0;
+}
+.bg-body .circle h2 {
+  font-family: Gotham;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1baf5d;
+  font-weight: 500;
+  margin-top: 36px;
+  padding-bottom: 44px;
+}
+.bg-body .reality {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 143px;
+}
+.bg-body .reality .reality-one p,
+.bg-body .reality .reality-two p {
+  position: relative;
+  width: 260px;
+  color: #566375;
+  font-family: "Gotham - Book";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.bg-body .reality .reality-one p:before,
+.bg-body .reality .reality-two p:before {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #1db05e;
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 62px;
+  display: inline-block;
+  text-align: center;
+  left: -95px;
+}
+.bg-body .reality .reality-two p:before {
+  content: "";
+}
+.bg-body .reality .reality-one {
+  margin-left: 10%;
+}
+footer {
+  background-image: url(../img/bg-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+  height: 500px;
+  min-width: 1000px;
+}
+footer .subscribe {
+  text-align: center;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .subscribe h3 {
+  font-family: Gotham;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 61px;
+}
+footer .subscribe .input-in {
+  position: relative;
+  margin-top: 46px;
+}
+footer .subscribe .input-in input {
+  color: #ffffff;
+  font-family: "Gotham - Book", Arial;
+  font-size: 18px;
+  line-height: 18px;
+  width: 495px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 38px;
+  padding-left: 70px;
+  box-sizing: border-box;
+  outline: none;
+}
+footer .subscribe .input-in input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "Gotham - Book";
+  font-size: 18px;
+  line-height: 18px;
+}
+footer .subscribe .input-in span {
+  font-family: "Font Awesome";
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  font-weight: 400;
+  top: 16px;
+  left: 279px;
+}
+footer .subscribe .input-in a {
+  font-family: Gotham;
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  box-shadow: 0 2px 0 #c1412e;
+  background-color: #e94e38;
+  display: block;
+  border-radius: 40px;
+  margin: 0 auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 1, 0.15);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 16px;
+  box-sizing: border-box;
+  margin-top: 25px;
+  top: -19px;
+  left: 612px;
+}
+footer .contact {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 42px;
+}
+footer .contact .ipsum-one {
+  width: 33.33%;
+}
+footer .contact .ipsum-one a {
+  font-family: "Gotham - Book";
+  font-size: 14px;
+  line-height: 23px;
+  color: #c0bebc;
+  display: block;
+  font-weight: 400;
+}
+footer .contact .ipsum-follow {
+  width: 33.33%;
+}
+footer .contact .ipsum-follow a {
+  font-family: "Font Awesome";
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+footer .contact .ipsum-follow p {
+  font-family: "Gotham - Book";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 63px;
+}
+footer .contact h3 {
+  font-family: Gotham;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
